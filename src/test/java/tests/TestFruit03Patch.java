@@ -8,7 +8,6 @@ import pojo.CostumerPojo;
 import utilities.API_Util;
 import utilities.FruitTestBase;
 
-
 import static io.restassured.RestAssured.*;
 
 public class TestFruit03Patch extends FruitTestBase {
