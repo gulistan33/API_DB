@@ -1,13 +1,14 @@
 package utilities;
 
-import org.junit.jupiter.api.AfterAll;
-import org.junit.jupiter.api.BeforeAll;
+
+import org.testng.annotations.AfterTest;
+import org.testng.annotations.BeforeTest;
 
 import static io.restassured.RestAssured.*;
 
 public class LibraryTestBase {
 
-    @BeforeAll
+    @BeforeTest
     public static void setup() {
 
         baseURI = "https://library2.cybertekschool.com/";
@@ -33,7 +34,7 @@ public class LibraryTestBase {
 
     }
 
-    @AfterAll
+    @AfterTest
     public static void tearDown() {
         reset();
         // destroy the db connection here

@@ -7,7 +7,8 @@ import java.util.Properties;
 public class ConfigReader {
 
     private static Properties properties = new Properties();
-    static{
+
+    static {
         try {
             FileInputStream file = new FileInputStream("config.properties");
             properties.load(file);
@@ -16,7 +17,8 @@ public class ConfigReader {
             System.out.println("Properties File not found");
         }
     }
-    public static String read(String keyWord){
+
+    public static String read(String keyWord) {
         return properties.getProperty(keyWord);
     }
 }
