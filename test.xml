@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <test verbose="2" preserve-order="true" name="/Users/gulistan/cydeo/API_DB">
+        <classes>
+            <class name="tests.TestFruit01Get">
+                <methods>
+                    <include name="testGet"/>
+                    <include name="testOneGet"/>
+                </methods>
+            </class>
+            <class name="tests.TestFruit02Post">
+                <methods>
+                    <include name="postRequest"/>
+                </methods>
+            </class>
+            <class name="tests.TestFruit03Patch">
+                <methods>
+                    <include name="patchUser"/>
+                </methods>
+            </class>
+            <class name="tests.TestFruit04Delete">
+                <methods>
+                    <include name="delete"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
